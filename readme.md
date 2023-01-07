@@ -1,4 +1,34 @@
-# Quantum Mechanical Keyboard Firmware
+# My QMK Firmware
+
+## The changes from original firmware
+
+* Enable features
+    * Mouse Keys
+* Bind some keys
+    * Bind INSERT to "Home"
+    * Bind Fn-I to "INSERT"
+    * Bind Fn-Del to "Change RGB effect mode"
+    * Bind Fn-Ctrl to "CapsLock to Left Ctrl"
+    * Bind Fn-Caps to "CapsLock to CapsLock"
+    * Bind Fn-M(ac) to "Swap GUI and Left Alt"
+    * Bind Fn-W(indow) to "Unswap GUI and Left Alt"
+    * Bind Fn-Up to "Huration Increase"
+    * Bind Fn-Down to "Huration Decrease"
+    * Bind Fn-Left to "Saturation Decrease"
+    * Bind Fn-Right to "Saturation Increase"
+    * Bind Fn-, to "Mouse Cursor Left"
+    * Bind Fn-. to "Mouse Cursor Down"
+    * Bind Fn-/ to "Mouse Cursor Right"
+    * Bind Fn-l to "Mouse Curosr Up"
+    * Bind Fn-; to "Mouse Scroll Up"
+    * Bind Fn-' to "Mouse Croll Down"
+    * Bind Fn-[ to "Mouse Button1"
+    * Bind Fn-] to "Mouse Button2"
+* Change the default RGB mode
+    * default mode: MULTISPLASH
+    * brightness: max
+    * saturation: 168(range 0~255)
+
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
