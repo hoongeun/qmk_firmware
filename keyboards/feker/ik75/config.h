@@ -48,6 +48,8 @@
 #ifdef RGB_MATRIX_ENABLE
     #define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
+    #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_MULTISPLASH
+    #define RGB_MATRIX_DEFAULT_SAT 168
     #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
     #define RGB_MATRIX_KEYPRESSES
     #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
@@ -60,9 +62,9 @@
     #define DRIVER_2_LED_TOTAL 64
 
     /* RGB Matrix effect */
-    #define ENABLE_RGB_MATRIX_ALPHAS_MODS
-    #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
-    #define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+    // #define ENABLE_RGB_MATRIX_ALPHAS_MODS
+    // #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+    // #define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
     #define ENABLE_RGB_MATRIX_BREATHING
     #define ENABLE_RGB_MATRIX_BAND_SAT
     #define ENABLE_RGB_MATRIX_BAND_VAL
@@ -106,3 +108,26 @@
     #define ENABLE_RGB_MATRIX_SOLID_SPLASH
     #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif
+
+// Repeat keys
+#undef TAPPING_TERM
+#define TAPPING_TERM 200
+
+// Prevent normal rollover on alphas from accidentally triggering mods.
+#define IGNORE_MOD_TAP_INTERRUPT
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define TAPPING_FORCE_HOLD
+
+// Mouse key speed and acceleration.
+#undef MOUSEKEY_DELAY
+#define MOUSEKEY_DELAY          0
+#undef MOUSEKEY_INTERVAL
+#define MOUSEKEY_INTERVAL       16
+#undef MOUSEKEY_WHEEL_DELAY
+#define MOUSEKEY_WHEEL_DELAY    0
+#undef MOUSEKEY_MAX_SPEED
+#define MOUSEKEY_MAX_SPEED      6
+#undef MOUSEKEY_TIME_TO_MAX
+#define MOUSEKEY_TIME_TO_MAX    64
+
